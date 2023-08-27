@@ -58,12 +58,12 @@ $(document).ready(function() {
 
         if ( currentActivePlayer == 1 ) {
             currentActivePlayer = 2;
-            $turn.html('It is player 2 (X) turn.');
+            $turn.html('<div class="alert alert-primary">It is player 2 (X) turn.</div>');
             return 1;
         }    
         else {    
             currentActivePlayer = 1;       
-            $turn.html('It is player 1 (O) turn.');     
+            $turn.html('<div class="alert alert-primary">It is player 1 (O) turn.</div>');     
             return 2;
         }    
     }
@@ -96,8 +96,8 @@ $(document).ready(function() {
 
         if ( totalFilleBox === 9 ) {
 
-            $full.html('All boxes have been filled.');
-            $winner.html('This game ended in a tie.');            
+            $full.html('<div class="alert alert-primary">All boxes have been filled.</div>');
+            $winner.html('<div class="alert alert-primary">This game ended in a tie.</div>');            
             return true;
         }
         else {
@@ -154,52 +154,52 @@ $(document).ready(function() {
 
 
         if ( valueForBoxes[0] === 'O' && valueForBoxes[1] === 'O' && valueForBoxes[2] === 'O'   ) {
-            $winner.html('Congratulation !.. Player 1 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 1 won the game.</div>');     
         }
         else if ( valueForBoxes[0] === 'X' && valueForBoxes[1] === 'X' && valueForBoxes[2] === 'X'   ) {
-            $winner.html('Congratulation !.. Player 2 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 2 won the game.</div>');     
         }
         else if ( valueForBoxes[3] === 'O' && valueForBoxes[4] === 'O' && valueForBoxes[5] === 'O'   ) {
-            $winner.html('Congratulation !.. Player 1 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 1 won the game.</div>');     
         }
         else if ( valueForBoxes[3] === 'X' && valueForBoxes[4] === 'X' && valueForBoxes[5] === 'X'   ) {
-            $winner.html('Congratulation !.. Player 2 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 2 won the game.</div>');     
         }
         else if ( valueForBoxes[6] === 'O' && valueForBoxes[7] === 'O' && valueForBoxes[8] === 'O'   ) {
-            $winner.html('Congratulation !.. Player 1 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 1 won the game.</div>');     
         }
         else if ( valueForBoxes[6] === 'X' && valueForBoxes[7] === 'X' && valueForBoxes[8] === 'X'   ) {
-            $winner.html('Congratulation !.. Player 2 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 2 won the game.</div>');     
         }
         else if ( valueForBoxes[0] === 'O' && valueForBoxes[3] === 'O' && valueForBoxes[6] === 'O'   ) {
-            $winner.html('Congratulation !.. Player 2 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 2 won the game.</div>');     
         }
         else if ( valueForBoxes[0] === 'X' && valueForBoxes[3] === 'X' && valueForBoxes[6] === 'X'   ) {
-            $winner.html('Congratulation !.. Player 2 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 2 won the game.</div>');     
         }
         else if ( valueForBoxes[1] === 'O' && valueForBoxes[4] === 'O' && valueForBoxes[7] === 'O'   ) {
-            $winner.html('Congratulation !.. Player 1 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 1 won the game.</div>');     
         }
         else if ( valueForBoxes[1] === 'X' && valueForBoxes[4] === 'X' && valueForBoxes[7] === 'X'   ) {
-            $winner.html('Congratulation !.. Player 2 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 2 won the game.</div>');     
         }
         else if ( valueForBoxes[2] === 'O' && valueForBoxes[5] === 'O' && valueForBoxes[8] === 'O'   ) {
-            $winner.html('Congratulation !.. Player 1 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 1 won the game.</div>');     
         }
         else if ( valueForBoxes[2] === 'X' && valueForBoxes[5] === 'X' && valueForBoxes[8] === 'X'   ) {
-            $winner.html('Congratulation !.. Player 2 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 2 won the game.</div>');     
         }
         else if ( valueForBoxes[0] === 'O' && valueForBoxes[4] === 'O' && valueForBoxes[8] === 'O'   ) {
-            $winner.html('Congratulation !.. Player 1 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 1 won the game.</div>');     
         }
         else if ( valueForBoxes[0] === 'X' && valueForBoxes[4] === 'X' && valueForBoxes[8] === 'X'   ) {
-            $winner.html('Congratulation !.. Player 2 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 2 won the game.</div>');     
         }
         else if ( valueForBoxes[2] === 'O' && valueForBoxes[4] === 'O' && valueForBoxes[6] === 'O'   ) {
-            $winner.html('Congratulation !.. Player 1 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 1 won the game.</div>');     
         }
         else if ( valueForBoxes[2] === 'X' && valueForBoxes[4] === 'X' && valueForBoxes[6] === 'X'   ) {
-            $winner.html('Congratulation !.. Player 2 won the game.');     
+            $winner.html('<div class="alert alert-primary">Congratulation !.. Player 2 won the game.</div>');     
         }
 
     }  
